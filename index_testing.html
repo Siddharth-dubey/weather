@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weather" class="fulls">
+<head>
+	<title>Weather pro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
+	<script type="text/javascript" src="lib/angular/app_revised.js"></script>
+	<script type="text/javascript" src="lib/angular/route.js"></script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68488662-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+<script>
+  (function (window, document, tag, url, namespace) {
+    element = document.createElement(tag);
+    placement = document.getElementsByTagName(tag)[0];
+    element.async = 1;
+    element.id = "od-sdk";
+    element.setAttribute('data-id', 'Nzg5NF8xNTE5NzEzNjc1MTM2XzQ=');
+    element.src = url;
+    placement.parentNode.insertBefore(element, placement);
+  })(window, document, 'script', 'https://s3-ap-southeast-1.amazonaws.com/onedirect/survey/survey_sdk/webinapp-sdk-v1.min.js', 'od')
+</script>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+<style type="text/css">
+	
+	.full{
+		background: url('lib/img/b.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
+	.card{
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+		width: 100%;
+		background: #fff;
+		border-radius: 2px;
+		height: 100%;
+		padding: 10px;
+	}
+	.card-title{
+		padding: 10px;
+		margin-bottom:20px; 
+	}
+	.cover-shade{
+		height: 100%;
+		width: 100%;
+		z-index: 100;
+		background-size: cover;	
+		background: rgba(0,0,0,0.5);
+	}
+	.search-box{
+		z-index: 25;
+		color: #fff;
+	}
+	
+	.s	{
+		margin-top: 10%;/*
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125, 126, 125, 0.21)), color-stop(100%,rgba(14, 14, 14, 0.55)));*/
+		color: #000;
+	}
+	.wh{
+		color: #fff;
+	}
+</style>
+</head>
+<body class="full">
+	<div ng-view></div>
+	<a href="scroll.html">scroll</a>
+	<a href="test.html">test</a>
+</body>
+
+</html>
