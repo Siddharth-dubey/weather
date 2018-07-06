@@ -30,6 +30,25 @@
     placement.parentNode.insertBefore(element, placement);
   })(window, document, 'script', 'https://s3-ap-southeast-1.amazonaws.com/onedirect/survey/survey_sdk/staging/webinapp-sdk-v1.min.js', 'od')
 </script>
+	
+
+	<script>
+	window.onedirectSettings = {
+			apiKey: 'NjE4MV8xNTI4Nzk3NTcyNTE5XzE=',
+		}
+			let iframe = document.createElement('iframe');
+		iframe.id = "od-messenger-wrapper";
+		iframe.style.display = 'none';
+		document.body.appendChild(iframe);
+		let scripts = document.createElement('script');
+		scripts.src = "https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/staging/od-messaging.main%40v1.0.js";
+		iframe.contentWindow.document.head.appendChild(scripts);
+	
+	</script>
+	
+	
+	
+	
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
 <style type="text/css">
 	
