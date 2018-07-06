@@ -32,20 +32,7 @@
 </script>
 	 -->
 
-	<script>
-	window.onedirectSettings = {
-			apiKey: 'NjE4MV8xNTI4Nzk3NTcyNTE5XzE=',
-		}
-			let iframe = document.createElement('iframe');
-		iframe.id = "od-messenger-wrapper";
-		iframe.style.display = 'none';
-		document.body.appendChild(iframe);
-		let scripts = document.createElement('script');
-		scripts.src = "https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/staging/od-messaging.main%40v1.0.js";
-		iframe.contentWindow.document.head.appendChild(scripts);
-	
-	</script>
-	
+
 	
 	
 	
@@ -97,6 +84,20 @@
 	<div ng-view></div>
 	<a href="scroll.html">scroll</a>
 	<a href="test.html">test</a>
+		<script>
+	window.onedirectSettings = {
+			apiKey: 'NjE4MV8xNTI4Nzk3NTcyNTE5XzE=',
+		}
+			let iframe = document.createElement('iframe');
+		iframe.id = "od-messenger-wrapper";
+		iframe.style.display = 'none';
+		document.body.appendChild(iframe);
+		let scripts = document.createElement('script');
+		scripts.src = "https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/staging/od-messaging.main%40v1.0.js";
+		iframe.contentWindow.document.head.appendChild(scripts);
+	
+	</script>
+	
 </body>
 
 </html>
