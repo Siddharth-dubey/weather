@@ -88,15 +88,10 @@
 	window.onedirectSettings = {
 			apiKey: 'NjE4MV8xNTI4Nzk3NTcyNTE5XzE=',
 		}
-			let iframe = document.createElement('iframe');
-		iframe.id = "od-messenger-wrapper";
-		iframe.style.display = 'none';
-		document.body.appendChild(iframe);
-		let scripts = document.createElement('script');
-		scripts.src = "https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/staging/od-messaging.main%40v1.0.js";
-		iframe.contentWindow.document.head.appendChild(scripts);
-	
 	</script>
+	<script>
+	!function (e, s, n, t, a) { el = s.createElement(n), p = s.getElementsByTagName(n)[0], el.async = 1, el.id = "onedirect-messaging-sdk", el.src = "https://s3-ap-southeast-1.amazonaws.com/onedirect/messaging/web-sdk/staging/od-messaging.init.v1.0.min.js", p.parentNode.insertBefore(el, p) }(window, document, "script");
+</script>
 	
 </body>
 
