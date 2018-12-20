@@ -19,7 +19,7 @@
 
 </script>
   
-<script>
+<!-- <script>
   (function (window, document, tag, url, namespace) {
     element = document.createElement(tag);
     placement = document.getElementsByTagName(tag)[0];
@@ -29,6 +29,17 @@
     element.src = url;
     placement.parentNode.insertBefore(element, placement);
   })(window, document, 'script', 'https://s3-ap-southeast-1.amazonaws.com/onedirect/survey/survey_sdk/staging/webinapp-sdk-v1.min.js', 'od')
+</script> -->
+	<script>
+  (function (window, document, tag, url, namespace) {
+    element = document.createElement(tag);
+    placement = document.getElementsByTagName(tag)[0];
+    element.async = 1;
+    element.id = "od-sdk";
+    element.setAttribute('data-id', 'Nzg5NF8xNTQ1MzA4NjEyNzUwXzQ=');
+    element.src = url;
+    placement.parentNode.insertBefore(element, placement);
+  })(window, document, 'script', 'https://s3-ap-southeast-1.amazonaws.com/onedirect/survey/survey_sdk/webinapp-sdk-v1.min.js', 'od')
 </script>
 <!-- 	 <script>
   (function (window, document, tag, url, namespace) {
